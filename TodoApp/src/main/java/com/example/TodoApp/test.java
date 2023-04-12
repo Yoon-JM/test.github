@@ -6,9 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class test {
 
+    String test = "To-do Application!!";
+
     @GetMapping("/")
     public String helloWorld(){
-        return "To-do Application!";
+        return  test;
     }
+
+
 
 }
