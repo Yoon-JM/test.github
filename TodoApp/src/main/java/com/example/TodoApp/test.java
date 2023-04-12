@@ -1,7 +1,14 @@
 package com.example.TodoApp;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class test {
-    public static void main(String[] args){
-        System.out.println("뭐지?");
+
+    @GetMapping("/")
+    public String helloWorld(){
+        return "To-do Application!";
     }
+
 }
